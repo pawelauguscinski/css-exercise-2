@@ -1,13 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sample exercise 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <div class="header__brand"><img src="img/logo.png"></div>
+            <ul class="header__menu">
+                <li class="header__menu__item"><a class="header__menu__link header__menu__link--active" href="#">To
+                        Rent</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="#">Room Share</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="#">How to</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="#">FAQ's</a></li>
+            </ul>
+            <div class="header__auth">
+                <a class="header__auth__link" href="#">Sign in</a>
+                <span class="header__auth__devider">|</span>
+                <a class="header__auth__link" href="#">Register</a>
+            </div>
+        </header>
+        <div class="top">
+            <div class="slider">
+                <div class="slider__header">
+                    <span class="slider__header__title">2 bedroom appartment to rent in Bournemouth</span></span>
+                    <span class="slider__header__price">£690 pcm</span>
+                </div>
+                <div class="slider__preview">
+                    <img class="slider__image slider__image--big-border" src="img/sample_photo_big.png" />
+                    <span class="slider__preview__action">Start a slideshow <img class="slider__preview__action__button"
+                            src="img/play_button.png" /></span>
+                    <div class="slider__thumbnails">
+                        <button type="button" class="slider__thumbnails__navigation"> </button>
+                        <img class="slider__thumbnail slider__image" src="img/sample_phono_small_1.png" />
+                        <img class="slider__thumbnail slider__image" src="img/sample_photo_small_2.png" />
+                        <img class="slider__thumbnail slider__image" src="img/sample_photo_small_3.png" />
+                        <img class="slider__thumbnail slider__image" src="img/sample_photo_small_4.png" />
+                        <button type="button" class="slider__thumbnails__navigation slider__thumbnails__navigation--right">
+                        </button>
+                    </div>
+                </div>
+                <div class="slider__actions">
+                    <div class="slider__action slider__action__add">
+                        <span class="slider__action__text">Add to my shortlist <img class="slider__action__icon" src="img/plus.png" /></span>
+                    </div>
+                    <div class="slider__action slider__action__print">
+                        <span class="slider__action__text">Print details <img class="slider__action__icon" src="img/printer.png" /></span>
+
+                    </div>
+                    <div class="slider__action slider__action__email">
+                        <span class="slider__action__text">I'am interested - contact landlord <img class="slider__action__icon"
+                                src="img/envelope.png" /></span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="side-panel">
+                <div class="side-panel__back">
+                    <a class="side-panel__back__text" href="#"><img class="side-panel__back__image" src="img/arrow.png"> Back
+                        to search results</a>
+                </div>
+                <img class="side-panel__search-map" src="img/search_map.png">
+                <div class="side-panel__menu">
+                    <div class="side-panel__menu__top">
+                        <span class="side-panel__menu__header">My menu</span>
+                        <span class="side-panel__menu__prompt">Welcome back <a class="side-panel__menu__prompt__link"
+                                href="#">Gary</a></span>
+                    </div>
+                    <ul class="side-panel__menu__items">
+                        <li class="side-panel__menu__item"><a href="#" class="side-panel__menu__link">My shortlist (<span
+                                    class="side-panel__menu__badge">5</span>)</a></li>
+                        <li class="side-panel__menu__item"><a href="#" class="side-panel__menu__link">My messages (<span
+                                    class="side-panel__menu__badge">1</span>)</a></li>
+                        <li class="side-panel__menu__item"><a href="#" class="side-panel__menu__link">My ratings</a></li>
+                        <li class="side-panel__menu__item"><a href="#" class="side-panel__menu__link">Property to rent</a></li>
+                        <li class="side-panel__menu__item"><a href="#" class="side-panel__menu__link">Home share</a></li>
+                        <li class="side-panel__menu__item"><a href="#" class="side-panel__menu__link">My profile</a></li>
+                    </ul>
+                </div>
+                <div class="side-panel__social">
+                    <div class="side-panel__social__item">
+                        <button class="side-panel__social__button side-panel__social__button--fb-share" type="button"></button>
+                        <span class="side-panel__social__count--fb-share">9614</span>
+                    </div>
+                    <div class="side-panel__social__item">
+                        <button class="side-panel__social__button side-panel__social__button--fb-like" type="button"></button>
+                        <span class="side-panel__social__count--fb-like">1.4k</span>
+                    </div>
+                    <div class="side-panel__social__item">
+                        <button class="side-panel__social__button side-panel__social__button--tweet" type="button"></button>
+                        <span class="side-panel__social__count--tweet">4260</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="content__top">
+                    <div class="content__top__info">
+                        <div class="content__top__title">Two bedroom appartment Bournemouth BH3</div>
+                        <div class="content__top__price">£660 pcm</div>
+                        <div class="content__top__address">Address details here and postcode lorem ipsum dolor sit
+                            66453</div>
+                    </div>
+                    <div class="content__rating">
+                        <div class="content__rating__summary">
+                            <span class="content__rating__info">
+                                Rating
+                            </span>
+                            <span class="content__rating__stars">
+                                <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                <img src="img/star_empty.png" alt="" class="content__rating__star">
+                            </span>
+                            <span class="content__rating__reviews">(12 reviews)</span>
+                            <button class="content__rating__add" type="button">Add rating</button>
+                        </div>
+                        <ul class="content__rating__list">
+                            <li class="content__rating__item">
+                                <span>Location:</span>
+                                <span class="content__rating__stars">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_empty.png" alt="" class="content__rating__star">
+                                </span>
+                            </li>
+                            <li class="content__rating__item">
+                                <span>Cleanliness</span>
+                                <span class="content__rating__stars">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_empty.png" alt="" class="content__rating__star">
+                                    <img src="img/star_empty.png" alt="" class="content__rating__star">
+                                </span>
+                            </li>
+                            <li class="content__rating__item">
+                                <span>Services:</span>
+                                <span class="content__rating__stars">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                </span>
+                            </li>
+                            <li class="content__rating__item">
+                                <span>Communication:</span>
+                                <span class="content__rating__stars">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_filled.png" alt="" class="content__rating__star">
+                                    <img src="img/star_empty.png" alt="" class="content__rating__star">
+                                    <img src="img/star_empty.png" alt="" class="content__rating__star">
+                                    <img src="img/star_empty.png" alt="" class="content__rating__star">
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content__features">
+                    <h1 class="content__features__title">key features</h1>
+                    <ul class="content__features__list">
+                        <li class="content__feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                        <li class="content__feature">Nam a ligula velit, ut venenatis tellus. </li>
+                        <li class="content__feature">Nunc vehicula libero a neque malesuada malesuada.</li>
+                        <li class="content__feature">Cum sociis natoque penatibus et magnis dis parturient</li>
+                        <li class="content__feature">Cum sociis natoque penatibus et magnis</li>
+                        <li class="content__feature">Fusce non erat non velit cursus facilisis.</li>
+                        <li class="content__feature">Sed consectetur bibendum sapien non vehicula.</li>
+                    </ul>
+                </div>
+                <div class="content__key-info">
+                    <h1 class="content__key-info__title">availability & key info</h1>
+                    <div class="content__key-info__list">
+                        <div class="content__key-info__keys">
+                            <p class="content__key-info__key">Date available</p>
+                            <p class="content__key-info__key">Deposit</p>
+                            <p class="content__key-info__key">Furnishing</p>
+                        </div>
+                        <div class="content__key-info__values">
+                            <p class="content__key-info__value">2 Jan 2012</p>
+                            <p class="content__key-info__value">£2000</p>
+                            <p class="content__key-info__value">Fully Furnished</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__description">
+                    <h1 class="content__description__title">full description</h1>
+                    <p class="content__description__short">
+                        Property detail here - this property is a spacious apartment in an exclusive block of 5 located
+                        whitin walking distance of Bournemouth town centre.
+                    </p>
+                    <ul class="content__description__list">
+                        <li class="content__description__item">Cum sociis natoque penatibus et magnis</li>
+                        <li class="content__description__item">Fusce non erat non velit cursus facilisis.</li>
+                        <li class="content__description__item">Sed consectetur bibendum sapien non vehicula.</li>
+                    </ul>
+                </div>
+                <div class="content__contact-form">
+                    <h1 class="content__contact-form__title">contact landlord</h1>
+                    <div class="contact-form__row">
+                        <div class="contact-form__label-column">
+                            <label class="contact-form__label" for="name">Name:</label>
+                        </div>
+                        <div class="contact-form__input-column">
+                            <input class="contact-form__input" name="name" />
+                            <div class="contact-form__radios">
+                                <div class="contact-form__radio-wrapper">
+                                    <input class="contact-form__radio" type="radio" name="type" value="1">
+                                    <label class="contact-form__radio__label">Request details</label>
+                                </div>
+                                <div class="contact-form__radio-wrapper">
+                                    <input class="contact-form__radio" type="radio" name="type" value="2">
+                                    <label class="contact-form__radio__label">Arrange viewing</label>
+                                </div>
+                                <div class="contact-form__radio-wrapper">
+                                    <input class="contact-form__radio" type="radio" name="type" value="3">
+                                    <label class="contact-form__radio__label">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form__row">
+                        <div class="contact-form__label-column">
+                            <label class="contact-form__label" for="message">Message:</label>
+                        </div>
+                        <div class="contact-form__input-column">
+                            <textarea class="contact-form__input contact-form__input--textarea" name="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-form__row">
+                        <div class="contact-form__label-column">
+                            <label class="contact-form__label" for="email">Email:</label>
+                        </div>
+                        <div class="contact-form__input-column">
+                            <input class="contact-form__input" name="email">
+                        </div>
+                    </div>
+                    <div class="contact-form__row">
+                        <div class="contact-form__label-column">
+                            <label class="contact-form__label" for="phone">Telephone:</label>
+                        </div>
+                        <div class="contact-form__input-column">
+                            <input class="contact-form__input" name="phone">
+                        </div>
+                    </div>
+                    <div class="contact-form__row">
+                        <div class="contact-form__label-column">
+
+                        </div>
+                        <div class="contact-form__input-column">
+                            <button class="contact-form__submit" type="button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar"></div>
+        </div>
+        <div class="footer">
+            <div class="footer__social">
+                <div class="footer__follow">
+                    <h2 class="footer__follow__title">follow us</h2>
+                    <div class="footer__follow__container">
+                        <button class="footer__follow__button footer__follow__button--fb" type="button"></button>
+                        <button class="footer__follow__button footer__follow__button--tw" type="button"></button>
+                        <button class="footer__follow__button footer__follow__button--in" type="button"></button>
+                        <button class="footer__follow__button footer__follow__button--uk" type="button"></button>
+                    </div>
+                </div>
+                <div class="social-bar">
+                    <div class="social-bar__item social-bar__item--fb">
+                        <div class="social-bar__badge social-bar__badge--fb">21.9k</div>
+                        <input class="social-bar__button social-bar__button--fb" type="button">
+                    </div>
+                    <div class="social-bar__item social-bar__item--tw">
+                        <div class="social-bar__badge social-bar__badge--tw">15.9k</div>
+                        <input class="social-bar__button social-bar__button--tw" type="button">
+                    </div>
+                    <div class="social-bar__item social-bar__item--in">
+                        <div class="social-bar__badge">2377</div>
+                        <input class="social-bar__button" type="button">
+                    </div>
+                    <div class="social-bar__item social-bar__item--email">
+                        <div class="social-bar__badge">2725</div>
+                        <input class="social-bar__button" type="button">
+                    </div>
+                    <div class="social-bar__item social-bar__item--share">
+                        <div class="social-bar__badge">129k</div>
+                        <input class="social-bar__button" type="button">
+                    </div>
+                </div>
+                <div class="footer__address">
+                    <h2 class="footer__address__title">address & contact info</h2>
+                    <p class="footer__address__content">
+                        Lorem ipsum Dolor <br>
+                        sit amet consecteur 22345 <br>
+                        <a href="mailto:info@thepropertyscout.com" class="footer__address__mailto">info@thepropertyscout.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__menu">
+                    <li class="footer__menu__item"><a href="#" class="footer__menu__link">Abount</a></li>
+                    <li class="footer__menu__item"><a href="#" class="footer__menu__link">Advertise with us</a></li>
+                    <li class="footer__menu__item"><a href="#" class="footer__menu__link">Contact</a></li>
+                    <li class="footer__menu__item"><a href="#" class="footer__menu__link">Press</a></li>
+                    <li class="footer__menu__item"><a href="#" class="footer__menu__link">Terms</a></li>
+                    <li class="footer__menu__item"><a href="#" class="footer__menu__link">Privacy</a></li>
+                </ul>
+                <span class="footer__copyright">© Copyright The Property Scout 2012</span>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
